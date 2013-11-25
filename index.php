@@ -1,6 +1,6 @@
 <!DOCTYPE html>
 <html>
-  <body style="background-color:#fff">
+  <body style="background-color:#202020">
     <br><br><br><br><br>
     <div align="CENTER" style="background-color:#ccc;font-family:verdana">
       <h1>Login</h1>
