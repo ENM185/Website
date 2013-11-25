@@ -6,7 +6,7 @@
       <h1>Login</h1>
       <form action="getuser.php" method="post">
         Username: <input type="text" name="u">
-        Password: <input type="text" name="p"><input type="submit" value="Login!">
+        Password: <input type="password" name="p"><input type="submit" value="Login!">
       </form>
       <br><br><br><br><br><br><br>
     </div>
