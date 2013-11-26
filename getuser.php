@@ -10,7 +10,7 @@
          echo "<meta http-equiv='refresh' content='0; url=http://orinteractive.com/notes/" .  $username . ".html'/>";
     }
     else{
-        echo "You have the wrong username or password. Go back to try again.";
+        echo "You have the wrong username or password. Go <a href='http://www.orinteractive.com/notes'>back</a> to try again.";
     }
   ?>
 </html>
