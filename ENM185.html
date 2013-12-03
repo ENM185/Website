@@ -297,7 +297,7 @@
             <h3 style="color:#6A5ACD;font-family:arial">
                 Notes:
             </h3>
-            <form style="font-family:arial;color:#6A5ACD" method="post" action="Notes One.php">
+            <form style="font-family:arial;color:#6A5ACD" method="post" action="Notes One.html">
                 Note #:<input type="text" name="numberOne" style="background-color:#333">
                 Note Name:<input type="text" name="nameOne" style="background-color:#333">
                 <textarea style="background-color:#333;color:#6A5ACD;font-family:arial;font-size:120%;width:1180px" rows="20" cols="146" id="new" class="two" name="notesTextAreaOne"></textarea>
@@ -551,6 +551,31 @@
                 <b>
                     Collapse
                 </b>
+            </div>
+            <br>
+            <div onclick="functionFiveTwo()" style="width:165px;background-color:#202020;text-align:left;cursor:pointer">
+              <p style="color:#0000FF;font-family:arial;font-size:120%">
+                <b>
+                  C-Span
+                </b>
+              </p>
+            </div>
+            <script>
+              function functionFiveTwo()
+              {
+                document.getElementById("blockFiveNotesTwo").innerHTML="<b>Interviewees:</b><br>Mark Elgart (SACS)<br>Contact:<br><br>Ms. Fields (LA teacher; PRO)<br><br><br>";
+              }
+              function collapseFiveTwo()
+              {
+                document.getElementById("blockFiveNotesTwo").innerHTML=""
+              }
+            </script>
+            <p style="color:#0000FF;font-family:arial" id="blockFiveNotesTwo">
+            </p>
+            <div onclick="collapseFiveTwo()" style="background-color:#202020;width:165px;text-align:left;font-family:arial;color:#0000FF;font-size:120%;cursor:pointer">
+              <b>
+                Collapse
+              </b>
             </div>
             <br>
             <p style:"color:#0000FF;font-family:arial">
