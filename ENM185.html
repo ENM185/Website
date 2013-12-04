@@ -302,10 +302,26 @@
             <h3 style="color:#6A5ACD;font-family:arial">
                 Notes:
             </h3>
-            <form style="font-family:arial;color:#6A5ACD" method="post" action="Notes One.html">
+            <?php
+                $sender = $_POST["sender"];
+                if($sender == "jewish_studies"){
+                    echo "<h4 onclick='function" . $_POST["title"] . "()'>" . $_POST["nameOne"] . "</h4><br>";
+                    echo "<script>";
+                    echo "function" . $_POST["title"] . "(){";
+                    echo "document.getElementById('blockOneNotes').innerHTML='" . $_POST["notesTextAreaOne"] . "'";
+                    echo "}";
+                    echo "function collapse" . $_POST["title"] . "(){";
+                    echo "document.getElementById('blockOneNotes').innerHTML=''";
+                    echo "}";
+                    echo "</script>";
+                    echo "<h4 onclick='collapse" . $_POST["title"] . "()'>Collapse</h4>";
+                }
+            ?>
+            <form style="font-family:arial;color:#6A5ACD" method="post" action="ENM185.html">
                 Note #:<input type="text" name="numberOne" style="color:#6A5ACD;background-color:#333">
                 Note Name:<input type="text" name="nameOne" style="color:#6A5ACD;background-color:#333">
                 <textarea style="background-color:#333;color:#6A5ACD;font-family:arial;font-size:120%;width:1180px" rows="20" cols="146" id="new" class="two" name="notesTextAreaOne"></textarea>
+                <input type="hidden" name="sender" value="jewish_studies">
                 <input type="submit">
             </form>
             </p>
