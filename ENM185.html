@@ -305,7 +305,9 @@
             <?php
                 $sender = $_POST["sender"];
                 if($sender == "jewish_studies"){
-                    echo "<h4 onclick='function" . $_POST["title"] . "()'>" . $_POST["nameOne"] . "</h4><br>";
+                    echo "<div onclick='function" . $_POST["title"] . "()'>"
+                    echo "<h4 style ='color:#6A5ACD;font-family:arial'>" . $_POST["nameOne"] . "</h4><br>";
+                    echo "</div>"
                     echo "<script>";
                     echo "function" . $_POST["title"] . "(){";
                     echo "document.getElementById('blockOneNotes').innerHTML='" . $_POST["notesTextAreaOne"] . "'";
@@ -314,7 +316,9 @@
                     echo "document.getElementById('blockOneNotes').innerHTML=''";
                     echo "}";
                     echo "</script>";
-                    echo "<h4 onclick='collapse" . $_POST["title"] . "()'>Collapse</h4>";
+                    echo "<div onclick='collapse" . $_POST["title"] . "()'>";
+                    echo "<h4 style ='color:#6A5ACD;font-family:arial'>Collapse</h4>";
+                    echo "</div">
                 }
             ?>
             <form style="font-family:arial;color:#6A5ACD" method="post" action="ENM185.php">
