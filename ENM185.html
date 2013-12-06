@@ -303,6 +303,19 @@
                 Notes:
             </h3>
             <?php
+                $parser = xml_parser_create();
+                function parse($parser, $element_name, $element_attrs)
+                {
+                    
+                }
+                function stopParse($parser, $element_name)
+                {
+                    
+                }
+                function char($parser, $data)
+                {
+                
+                }
                 $sender = $_POST["sender"];
                 if($sender == "jewish_studies"){
                     echo "<div style='color:#202020' onclick='function" . $_POST["nameOne"] . "()'>\n";
