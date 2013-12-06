@@ -305,21 +305,23 @@
             <?php
                 $sender = $_POST["sender"];
                 if($sender == "jewish_studies"){
-                    echo "<div style='color:#202020' onclick='function" . $_POST["nameOne"] . "()'>"
-                    echo "<h4 style ='color:#6A5ACD;font-family:arial'>" . $_POST["nameOne"] . "</h4><br>";
-                    echo "</div>"
-                    echo "<script>";
-                    echo "function" . $_POST["nameOne"] . "(){";
-                    echo "document.getElementById('blockOneNotes" . $_POST["nameOne"] . "').innerHTML='" . $_POST["notesTextAreaOne"] . "'";
-                    echo "}";
-                    echo "function collapse" . $_POST["nameOne"] . "(){";
-                    echo "document.getElementById('blockOneNotes" . $_POST["nameOne"] . "').innerHTML=''";
-                    echo "}";
-                    echo "</script>";
-                    echo "<p style='color:#6A5ACD' id='notesTextArea" . $_POST["nameOne"] . "'>"
-                    echo "<div style='color:#202020' onclick='collapse" . $_POST["nameOne"] . "()'>";
-                    echo "<h4 style ='color:#6A5ACD;font-family:arial'>Collapse</h4>";
-                    echo "</div>";
+                    echo "<div style='color:#202020' onclick='function" . $_POST["nameOne"] . "()'>\n";
+                    echo "<p>";
+                    echo "<h4 style ='color:#6A5ACD;font-family:arial'>" . $_POST["nameOne"] . "</h4><br>\n";
+                    echo "</p>";
+                    echo "</div>\n";
+                    echo "<script>\n";
+                    echo "function function" . $_POST["nameOne"] . "(){\n";
+                    echo "document.getElementById('blockOneNotes" . $_POST["nameOne"] . "').innerHTML='" . $_POST["notesTextAreaOne"] . "'\n";
+                    echo "}\n";
+                    echo "function collapse" . $_POST["nameOne"] . "(){\n";
+                    echo "document.getElementById('blockOneNotes" . $_POST["nameOne"] . "').innerHTML=''\n\n";
+                    echo "}\n";
+                    echo "</script>\n";
+                    echo "<p style='color:#6A5ACD' id='blockOneNotes" . $_POST["nameOne"] . "'>\n";
+                    echo "<div style='color:#202020' onclick='collapse" . $_POST["nameOne"] . "()'>\n";
+                    echo "<h4 style ='color:#6A5ACD;font-family:arial'>Collapse</h4>\n";
+                    echo "</div>\n";
                 }
             ?>
             <form style="font-family:arial;color:#6A5ACD" method="post" action="ENM185.php">
