@@ -320,7 +320,7 @@
                 if($sender == "jewish_studies"){
                     echo "<div style='color:#202020' onclick='function" . $_POST["nameOne"] . "()'>\n";
                     echo "<p>";
-                    echo "<h4 style ='color:#6A5ACD;font-family:arial'>" . $_POST["nameOne"] . "</h4><br>\n";
+                    echo "<h4 style ='color:#6A5ACD;font-family:arial'>" . $_POST["nameOne"] . "</h4>\n";
                     echo "</p>";
                     echo "</div>\n";
                     echo "<script>\n";
@@ -331,7 +331,7 @@
                     echo "document.getElementById('blockOneNotes" . $_POST["nameOne"] . "').innerHTML=''\n\n";
                     echo "}\n";
                     echo "</script>\n";
-                    echo "<p style='color:#6A5ACD' id='blockOneNotes" . $_POST["nameOne"] . "'>\n";
+                    echo "<p style='color:#6A5ACD;font-family:arial' id='blockOneNotes" . $_POST["nameOne"] . "'></p>\n";
                     echo "<div style='color:#202020' onclick='collapse" . $_POST["nameOne"] . "()'>\n";
                     echo "<h4 style ='color:#6A5ACD;font-family:arial'>Collapse</h4>\n";
                     echo "</div>\n";
