@@ -5,12 +5,12 @@
     $password = $_POST["p"];
     $key = 54867342743454;
     $encrypted = base64_encode(mcrypt_encrypt(MCRYPT_RIJNDAEL_256, md5($key), $password, MCRYPT_MODE_CBC, md5(md5($key))));
-    if(($username == "ENM185" && $encrypted == "XLINraUfPp49TB/pFNbZcn31oaAMRHV7ErX0CNo5K1k=") || ($username == "NerdicViking" && $encrypted == "pjXChM5rB7j5Fbtbl0R77F1V61URXeWzxt5paovxRtY=")){
+    if((){
 
-         echo "<meta http-equiv='refresh' content='0; url=http://orinteractive.com/notes/" .  $username . ".html'/>";
+         echo "<meta http-equiv='refresh' content='0; url=" .  $username . ".html'/>";
     }
     else{
-        echo "You have the wrong username or password. Go <a href='http://www.orinteractive.com/notes'>back</a> to try again.";
+        echo "You have the wrong username or password. Go <a href=''>back</a> to try again.";
     }
   ?>
 </html>
